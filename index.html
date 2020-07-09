@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Word Guessing Application</title>
+</head>
+<body>
+    <h1>Congratulations, You Won The Game</h1>
+
+    <script>
+        var name = prompt('enter your name');
+        alert('Hi '+ name +' You have 10 guesses. Guess numbers 1-10');
+        var answer = 3;
+        var guess = prompt('Whats Your Guess?');
+
+        for(i=0; i < 10; i++ ){
+            
+            if(answer == guess){
+                alert('You Guessed Right?');
+                break;
+            }else{
+                guess = prompt('Sorry, Incorrect Try Again');
+            }
+        }
+
+    </script>
+</body>
+</html>
